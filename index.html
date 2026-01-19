@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Ambey 🤍</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f2f2f2;
+    overflow-x:hidden;
+}
+
+/* HEART EFFECT */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:rgba(255,80,120,0.35);
+    font-size:24px;
+    animation:floatUp 8s linear infinite;
+    z-index:0;
+}
+@keyframes floatUp{
+    from{transform:translateY(0);opacity:1;}
+    to{transform:translateY(-120vh);opacity:0;}
+}
+
+/* HERO */
+.hero{
+    background:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+      url("C:/Users/st477/Documents/image1.jpeg");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:50px 20px;
+}
+
+.message-box{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(4px);
+    max-width:1000px;
+    padding:45px;
+    border-radius:22px;
+    color:#fff;
+    box-shadow:0 25px 60px rgba(0,0,0,0.45);
+    animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(30px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+h1{text-align:center;margin-bottom:30px;}
+
+p{line-height:2;font-size:17px;margin-bottom:18px;}
+
+/* HIGHLIGHT */
+.highlight{
+    font-size:20px;
+    background:rgba(0,0,0,0.28);
+    padding:20px;
+    border-left:4px solid #ff8fab;
+    border-radius:14px;
+    margin:28px 0;
+    animation:fadeIn 2.2s ease;
+}
+
+/* SHAYARI */
+.shayari{
+    margin-top:35px;
+    padding:25px;
+    border-left:3px solid rgba(255,255,255,0.6);
+    background:rgba(0,0,0,0.18);
+    border-radius:12px;
+    font-style:italic;
+    opacity:0;
+    animation:fadeInShayari 2.5s ease forwards;
+}
+@keyframes fadeInShayari{
+    from{opacity:0;transform:translateY(25px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+/* PHOTOS */
+.photos{
+    max-width:1100px;
+    margin:70px auto;
+    padding:0 20px;
+}
+.photos h2{text-align:center;color:#2c5364;}
+
+.photo{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:20px auto 10px;
+    border-radius:16px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+.caption{
+    text-align:center;
+    font-size:22px;
+    color:#444;
+    margin-bottom:45px;
+    font-style:italic;
+}
+
+.memories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+.memories img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.25);
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PASSWORD -->
+<script>
+const password="01082006";
+let p=prompt("This page is private 🤍\nEnter Password:");
+if(p!==password){
+    alert("Wrong password ❌");
+    document.body.innerHTML="";
+}
+</script>
+
+<!-- HEARTS -->
+<script>
+for(let i=0;i<30;i++){
+    let h=document.createElement("div");
+    h.className="heart";
+    h.innerHTML="❤️";
+    h.style.left=Math.random()*100+"vw";
+    h.style.animationDuration=(6+Math.random()*6)+"s";
+    document.body.appendChild(h);
+}
+</script>
+
+<section class="hero">
+<div class="message-box">
+
+<h1>For You, Ambey 🤍</h1>
+
+  <p>
+            Ambey,<br><br>
+            Shayad yeh words likhna mere liye sabse mushkil hai, kyunki jo rishta dil se jud jaata hai usse chhodna aasaan nahi hota.
+            Tum NEET ki preparation kar rahi ho, aur dil se main chahta hoon ki tum apni life mein bohot successful bano,
+            apne sapne poore karo 🩺✨.
+        </p>
+
+        <p>
+            Main bhi ek din zaroor kuch banunga — shayad alag raaste pe, par himmat ke saath.
+            Tumhe apni life mein peace chahiye tha… jo main shayad tumhe nahi de paaya.
+        </p>
+
+        <p>
+            Agar mera absence tumhe woh sukoon deta hai, toh main khud ko peeche rakh kar bhi khush hoon,
+            kyunki tumhari mental peace mere liye hamesha important rahi hai 🤍.
+        </p>
+
+        <p>
+            Tumhare jaane ke baad mujhe bohot ganda feel hua, sach bolun toh main thoda bhikhar bhi jaunga…
+            par main khud ko sambhaal lunga. Tum bas mat tootna, mere nahi rehne pe 💔.
+        </p>
+
+        <p>
+            Agar tumhe zindagi mein kabhi bhi, kisi bhi cheez ki help chahiye ho —
+            bina soche, bina ego — main hamesha available rahunga.
+            Mujhe bas tumhe khush dekhna hai 😊.
+        </p>
+
+        <p>
+            Apni tabiyat ka dhyaan rakhna, thakaan ko ignore mat karna,
+            aur apne family ko hamesha khush rakhna — tum un sab ke liye bohot special ho 🌸.
+        </p>
+
+        <p>
+            Main dua karta hoon ki tumhe woh khushi mile jo shayad mere saath rehkar tumhe nahi mil paayi.
+            Mujhe apne aap se thodi ghin bhi hai ki main tumhe woh happiness nahi de saka jo tum deserve karti thi…
+            phir bhi main hamesha tumhara acha sochta rahunga.
+            Aur haan, tumhari dosti tumhe mubarak 🤍.
+        </p>
+
+        <p>
+            Sach kahun toh tumhare baad shayad mujhe kisi se waisa pyaar dobara nahi hoga — I promise.
+            Shayad next life mein hum apne saare promises ek saath poore karenge 🌌.
+        </p>
+
+        <p>
+            Tum meri cutie pie thi, ho, aur shayad hamesha rahogi 🫶.
+        </p>
+
+
+
+<!-- SHAYARI -->
+<div class="shayari">
+Haan, tujhko chaand kahun, chamakti be-misaal hai
+
+Par tujhko chaand kyun kahun, lage toh usme daag hai
+
+Main tujhko phool sa kahun, sugandh kya be-misaal hai
+
+Par tujhko phool kyun kahun, murjaata vo bhi baad mein
+
+
+Main tujhko kuch bhi kahun, toh ye kalam mein daag hai
+
+Main tujhko Rab ka darja doon, toh ye khuda naaraaz hai
+
+Tujhko sabr se padha, pasandita kitaab hai
+
+Toh sach mein hai bhi, ki kahin pahaadon ke us paar hai?
+</div>
+
+<!-- ALL EXTRA LINES ADDED -->
+<div class="highlight">
+"Koi nahi marta kisi ke bagair."<br>
+Yes. It's true.<br><br>
+<b>But hamein zindagi jeeni thi, guzarna nahi.</b>
+</div>
+
+<div class="highlight">
+If you find me immature, you are definitely my closest one.
+</div>
+
+<div class="highlight">
+No one will give you more advice than a boyfriend who wants you to be his wife.
+</div>
+
+<div class="highlight">
+Laxmana said —<br>
+This line wasn't drawn to trap you. It was drawn to protect you.
+But sometimes, the greatest threats don't knock — they sweet-talk.
+</div>
+
+<p><b>I love you — silently, respectfully, forever.</b><br>
+Take care, Ambey 🌙✨</p>
+
+</div>
+</section>
+
+<section class="photos">
+
+<h2>Our First Photo</h2>
+<img class="photo" src="C:/Users/st477/Documents/image3.jpeg">
+<div class="caption">jis din pehla photo liye the, hamesha teri photo dekhte rehta tha sochta ab kya chaiye jindgi me itni pyaari ladki mil gyi.</div> 
+
+<h2>Zindagi mein aise hi muskurate rehna</h2>
+<img class="photo" src="C:/Users/st477/Documents/image2.jpeg">
+<div class="caption">Tum rote hue and sad bilkul bhi achi nhi lagti hai, Haste hue duniya ki sabse khubsurat ladki lagti ho.</div>
+
+<h2>Teri julfe… aaye haaye 🖤</h2>
+<img class="photo" src="C:/Users/st477/Documents/image4.jpeg">
+<div class="caption">Tere gaalon pe bikhri hain zulfein banke baadal, 
+Teri aankhon pe de rahi hai pehra kaali kaajal, 
+Dekh ke mera dil inhe, ho jaata hai ghaayal, 
+Dekh meri aankhein inhe, ho jaati hai paagal.</div>
+
+<h2>Memories ✨</h2>
+<div class="memories">
+<img src="C:/Users/st477/Documents/image5.jpeg">
+<img src="C:/Users/st477/Documents/image6.jpeg">
+<img src="C:/Users/st477/Documents/image7.jpeg">
+</div>
+
+<div class="caption">Funny how I always walk away from the things which I want the most. Goodbye, take care and all the best for future.</div>
+
+</section>
+
+<div class="footer">Your Shivam <P> Made with 🤍 by Shivam</div>
+
+</body>
+</html>
